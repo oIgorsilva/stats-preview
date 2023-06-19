@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script>
+     tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "very-dark-blue": "hsl(233, 47%, 7%)",
+            "dark-blue": "hsl(244, 38%, 16%)",
+            violet: "hsl(277, 64%, 61%)",
+            white: "hsl(0, 0%, 100%)",
+            "slightly-transparent-white": "hsla(0, 0%, 100%, 0.75)",
+            "slightly-transparent": "hsla(0, 0%, 100%, 0.6)"
+          },
+          fontFamily:{
+            title: "Inter",
+            sans: "Lexend Deca",
+          },
+          screens:{
+            desktop:"1440px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="w-screen h-screen bg-very-dark-blue px-6 py-[84px] desktop:p-0 desktop:flex desktop:items-center desktop:justify-center ">
+
+  <div class="desktop:flex-row-reverse gap-4 flex rounded-lg flex-col overflow-hidden bg-dark-blue w-full h-auto desktop:w-[80vw] ">
+    <div class="w-full relative">
+      <div class="bg-violet/60 w-full h-full absolute"></div>
+      <img class="w-full desktop:h-full " src="images/image-header-mobile.jpg" alt="">
+    </div>
+    <div class="desktop:p-16 flex flex-col gap-4 w-full p-8">
+      <h1 class="desktop:text-[41px] desktop:text-left text-white text-[26px] font-bold text-center">Get <strong class=" text-violet">insights</strong> that help your business <br class="desktop:hidden">grow.</h1>
+
+     <p class="desktop:text-lg desktop:text-left text-slightly-transparent text-center text-[15px] ">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+      
+  <div class="desktop:gap-16 desktop:mt-10 desktop:justify-start desktop:items-start desktop:flex-row w-full flex flex-col items-center justify-center pb-6 gap-4 text-sm">
+
+    <div class="flex flex-col items-center text-white desktop:justify-start desktop:items-start">
+      <strong class="text-2xl">10k+</strong>
+      <span class="text-slightly-transparent uppercase text-sm tracking-widest ">companies</span>
+    </div>
+
+    <div class="flex flex-col items-center text-white desktop:justify-start desktop:items-start">
+      <strong class="text-2xl">314</strong>
+      <span class="text-slightly-transparent uppercase text-sm tracking-widest ">templates</span>
+    </div>
+
+    <div class="flex flex-col items-center text-white desktop:justify-start desktop:items-start">
+      <strong class="text-2xl">12M+</strong>
+      <span class="text-slightly-transparent uppercase text-sm tracking-widest ">queries</span>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>
